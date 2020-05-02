@@ -25,3 +25,39 @@
 #container a {
   text-decoration: none;
 }
+
+ion-segment
+{
+  --color-hover: black;
+  background-color: transparent;
+}
+
+ion-segment-button
+{
+  --padding-start: 0px !important;
+  --padding-end: 0px !important;
+  --ripple-color: transparent;
+  --background-hover: transparent !important;
+}
+.sliders
+{
+  background-color:black;
+  width: 280px !important;
+  height: 520px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-left: 15px !important;
+}
+
+.logo
+{
+  margin-top: 150px;
+  height: 70px;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
