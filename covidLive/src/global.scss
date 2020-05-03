@@ -8,9 +8,10 @@ h1,p
     color: white;
 }  
 
-ion-title, ion-back-button
+ion-title, ion-back-button, ion-card-title
 {
     color: rgb(240, 56, 56);
+    padding-top: 5px;
     font-size: 15px;
 }
 
@@ -24,6 +25,7 @@ ion-card
 {
     text-transform: none;
     // line-height: 6px;
+
 }
 
 /* Core CSS required for Ionic components to work properly */

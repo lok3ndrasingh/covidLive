@@ -1,5 +1,7 @@
 {
   "name": "covidLive",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -8,5 +8,80 @@
 </ion-header>
 
 <ion-content>
+  <div class="div-logo">
+    <img src="/assets/bgs/livelogo.gif" class="logo">
+    <ion-title style="font-size: 20px;">
+      Global Cases Summary 
+    </ion-title>
+  </div>
+  
+<ion-card *ngFor="let data of globalCasesData"  style="--ion-background-color: rgb(0, 0, 0);">
+    <ion-list style="text-align : center;">
+      <ion-card >
+        <ion-card-title >Last Update</ion-card-title>
+        <ion-card-content><h1>{{data.lastUpdate}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Currently Infected</ion-card-title>
+        <ion-card-content><h1>{{data.currentlyInfected}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Acive Cases Critical Percentage</ion-card-title>
+        <ion-card-content><h1>{{data.activeCasesCriticalPercentage}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title> Active Cases Mild Percentage </ion-card-title>
+        <ion-card-content><h1>{{data.activeCasesMildPercentage}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Death Cases</ion-card-title>
+        <ion-card-content><h1>{{data.deathCases}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title> Cases With Outcome </ion-card-title>
+        <ion-card-content><h1>{{data.casesWithOutcome}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title> Total Cases </ion-card-title>
+        <ion-card-content><h1>{{data.totalCases}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Recovery Cases</ion-card-title>
+        <ion-card-content><h1>{{data.recoveryCases}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Mild Condition Active Cases</ion-card-title>
+        <ion-card-content><h1>{{data.mildConditionActiveCases}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Critical Conditions Active Cases</ion-card-title>
+        <ion-card-content><h1>{{data.criticalConditionActiveCases}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title> Recovered Closed Cases </ion-card-title>
+        <ion-card-content><h1>{{data.recoveredClosedCases}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Death Closed Cases</ion-card-title>
+        <ion-card-content><h1>{{data.deathClosedCases }}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Closed Cases Recovery Percentage</ion-card-title>
+        <ion-card-content><h1>{{data.closedCasesRecoveredPercentage }}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-title>Closed Cases Death Percentage</ion-card-title>
+        <ion-card-content><h1>{{data.closedCasesDeathPercentage}}</h1></ion-card-content>
+      </ion-card>
+      <ion-card>      
+        <ion-card-title> General Death Rate </ion-card-title>
+        <ion-card-content><h1>{{data.generalDeathRate}}</h1></ion-card-content>
+      </ion-card>
 
+    </ion-list>
+</ion-card>
+<!-- <ion-card>
+  <ion-card-title> Source </ion-card-title>
+  <ion-card-content>Api Url : </ion-card-content>
+</ion-card> -->
 </ion-content>

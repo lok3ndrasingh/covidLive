@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-page4',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page4Page implements OnInit {
 
-  constructor() { }
+  constructor(private http : HttpClient) { }
 
   ngOnInit() {
+    this.http.get("https://tools.cdc.gov/api/v2/resources/media/132608.rss").subscribe( res =>
+    {
+      console.log(res);
+    });
   }
 
 }
